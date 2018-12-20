@@ -65,8 +65,8 @@ module.exports = {
 		strategies: {
 			facebook: {
 				client_id: '1827542730690142',
-				userinfo_endpoint: 'https://graph.facebook.com/v2.12/me?fields=about,name,picture{url},email,birthday',
-				scope: ['public_profile', 'email', 'user_birthday']
+				userinfo_endpoint: 'https://graph.facebook.com/v2.12/me?fields=about,name,picture{url},email',
+				scope: ['public_profile', 'email']
 			},
 			google: {
         client_id: '189755818918-lr7ph85ibnro1it94viqkjujhps2tlob.apps.googleusercontent.com'
