@@ -11,7 +11,6 @@
 
 				<!-- Right aligned nav items -->
 				<b-navbar-nav class="ml-auto">
-					<b-nav-item to="/login" v-if="!$auth.loggedIn" right>Ingresar</b-nav-item>
 					<b-nav-item-dropdown v-if="$auth.loggedIn" right>
 						<template slot="button-content">
 							<em>Mi Usuario</em>

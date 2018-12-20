@@ -3,8 +3,8 @@
 	<b-jumbotron header="Podemos Aprender" lead="Armá tu equipo para trabajar, negocios y aprender." >
 		<p>Para más información <b-link href="https://podemosaprender.org/contacto">contactanos</b-link></p>
 		<div v-if="!$auth.loggedIn">
-			<b-btn @click="loginFb" size="sm" variant="primary">Entrar con Facebook</b-btn>
-			<b-btn @click="loginGoog" size="sm" variant="danger">Entrar con Google</b-btn>
+			<img id="bfb" @click="loginFb" size="sm" src="/btn_fb.png" alt="Continuar con Facebook">
+			<img id="bgoog" @click="loginGoog" size="sm" src="/btn_google.png" alt="Continuar con Google">
 			<b-btn to="registrarme" size="sm" variant="success">Registrarme</b-btn>
 		</div>
 	</b-jumbotron>
@@ -26,4 +26,14 @@ export default {
 </script>
 
 <style>
+#bgoog { 
+	cursor: pointer; 
+	width: 11em;
+	height: 2.19em;
+}
+#bfb { 
+	cursor: pointer; 
+	width: 11em;
+	height: 2.1em;
+}
 </style>
