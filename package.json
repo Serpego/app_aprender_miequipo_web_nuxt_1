@@ -1,0 +1,25 @@
+{
+  "name": "MiEquipo_PodemosAprender",
+  "version": "1.0.0",
+  "description": "MiEquipo en PodemosAprender",
+  "author": "aprender_app@mauriciocap.com",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/auth": "^4.5.3",
+    "@nuxtjs/axios": "^5.3.6",
+    "bootstrap-vue": "^2.0.0-beta",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.3",
+    "nuxt": "^2.0.0",
+    "vue-recaptcha": "^1.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
